@@ -9,18 +9,16 @@ export default function Banner() {
     }
 
     return(
-        <div className="flex items-center justify-center p-8 bg-main-bg bg-cover bg-center text-floral-white h-96">
-           <div className="w-40">
-            <h1 className="font-exo2 text-5xl font-light">Vojtěch Novák.</h1>
-            <h2 className="font-exo2 text-5xl font-light">Grafika, design</h2>
-            <p className="font-lato text-lg my-4">Ahooj, tady Vojta, grafický designer z Prahy. Koukejte moje portfolio a pricujte se mnou. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-            <button className="bg-dark-red text-floral-white py-2 px-8 rounded hover:bg-red-950 underline" onClick={handleClick}>
-                Kontakt
-                </button>
-           </div>
-           <div className="flex p-4">
-            <img src={Strihac} alt="Nůžková postava" className="w-80 h-auto"></img>
-           </div>
-        </div>
+        <div className="w-full bg-black text-white flex flex-col md:flex-row items-center justify-between p-8">
+      <div className="text-center md:text-left">
+        <h1 className="text-4xl font-bold">Vojtěch Novák</h1>
+        <p className="text-xl">Grafika, design</p>
+        <p className="mt-4">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        <button className="mt-4 bg-red-600 text-white py-2 px-4 rounded">Kontakt</button>
+      </div>
+      <div className="mt-8 md:mt-0">
+        <img src={Strihac} alt="Design" className="w-48 h-48 object-cover rounded" />
+      </div>
+    </div>
     );
 };
