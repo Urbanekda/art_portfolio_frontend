@@ -20,6 +20,9 @@ export default {
         lato: ["Lato", "sans-serif"],
         exo2: ["Exo+2"],
       },
+      boxShadow: {
+        "red-shadow": "0 4px 50px 0 rgba(113, 3, 3, 1)",
+      },
     },
   },
   plugins: [],

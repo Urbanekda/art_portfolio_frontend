@@ -9,7 +9,7 @@ export default function Banner() {
     }
 
     return(
-        <div className="w-full bg-main-bg text-floral-white flex flex-col md:flex-row items-center justify-center p-8">
+        <div className="w-full bg-main-bg text-floral-white flex flex-col md:flex-row items-center justify-center p-8 border-b border-floral-white">
       <div className="text-center md:text-left md:mr-7 md:max-w-80">
         <h1 className="text-5xl font-exo2 font-light">Vojtěch Novák.</h1>
         <h2 className="text-5xl font-exo2 font-medium">Grafika, Design</h2>
@@ -17,7 +17,7 @@ export default function Banner() {
         <button className="mt-4 bg-dark-red text-white py-2 px-10 rounded hover:bg-red-950 underline" onClick={handleClick}>Kontakt</button>
       </div>
       <div className="mt-8 md:mt-0">
-        <img src={Strihac} alt="Design" className="w-64 h-64 object-cover rounded" />
+        <img src={Strihac} alt="Design" className="w-64 h-64 object-cover rounded shadow-red-shadow" />
       </div>
     </div>
     );
