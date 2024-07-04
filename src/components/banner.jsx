@@ -12,7 +12,7 @@ export default function Banner() {
         <div className="w-full bg-main-bg text-floral-white flex flex-col md:flex-row items-center justify-center p-8 border-b border-floral-white">
       <div className="text-center md:text-left md:mr-7 md:max-w-80">
         <h1 className="text-5xl font-exo2 font-light">Vojtěch Novák.</h1>
-        <h2 className="text-5xl font-exo2 font-medium">Grafika, Design</h2>
+        <h2 className="text-5xl font-exo2 font-medium">Grafika, Animace</h2>
         <p className="mt-4">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
         <button className="mt-4 bg-dark-red text-white py-2 px-10 rounded hover:bg-red-950 underline" onClick={handleClick}>Kontakt</button>
       </div>
