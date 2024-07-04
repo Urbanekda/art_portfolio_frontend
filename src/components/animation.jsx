@@ -1,30 +1,24 @@
 import React, { useRef, useEffect } from 'react';
+import Video from "../assets/VIDEO.mp4"
 
-const AutoplayVideo = ({ src }) => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        // Autoplay was prevented.
-        console.log("Autoplay was prevented:", error);
-      });
-    }
-  }, []);
+const Animation = () => {
+  const videoRef = useRef(null)
 
   return (
-    <video 
+    <div className='max-w-lg h-auto'>
+      <video 
       ref={videoRef}
-      src={src}
+      src={Video}
       autoPlay
       muted
       loop
       playsInline
-      className="w-full h-auto"
     >
       Your browser does not support the video tag.
     </video>
+    </div>
+    
   );
 };
 
-export default AutoplayVideo;
+export default Animation;

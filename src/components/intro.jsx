@@ -14,7 +14,7 @@ export default function Intro() {
                 <h2 className="font-exo2 text-xl text-floral-white underline text-center">Zamkněte svoje dcery</h2>
                 <p className="text-left text-floral-white text-lg font-lato my-4 max-w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur  egestas lectus, </p>
                 <p className="text-left text-floral-white text-sm font-lato my-4 max-w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur  egestas lectus,</p>
-                <button className="mt-4 bg-dark-red text-white py-2 px-10 rounded hover:bg-red-950 underline" onClick={handleClick}>Více o mně</button>
+                <button className="mt-4 bg-dark-red text-white py-2 px-10 rounded hover:bg-red-950 underline transition duration-300 hover:scale-110" onClick={handleClick}>Více o mně</button>
             </div>
         </div>
     )

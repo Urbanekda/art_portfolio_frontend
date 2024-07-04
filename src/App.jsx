@@ -1,4 +1,5 @@
 import Sidebar from './components/sidebar';
+import Footer from "./components/footer"
 import Home from "./pages/home";
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
@@ -19,6 +20,7 @@ export default function App () {
           </Routes>
         </div>
       </div>
+      <Footer />
     </Router>
   );
 }
