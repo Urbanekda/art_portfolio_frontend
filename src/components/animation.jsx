@@ -5,7 +5,7 @@ const Animation = () => {
   const videoRef = useRef(null)
 
   return (
-    <div className='max-w-lg h-auto'>
+    <div className='relative w-full h-auto max-h-100 overflow-hidden blur-lg'>
       <video 
       ref={videoRef}
       src={Video}
