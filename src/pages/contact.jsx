@@ -124,10 +124,10 @@ const Contact = () => {
             onChange={handleChange}
             className="mr-2"
           />
-          <label htmlFor="agreePolicy">You agree to our friendly privacy policy</label>
+          <label htmlFor="agreePolicy">Souhlasím se zpracováním osobních dat</label>
         </div>
         
-        <button type="submit" className="w-full py-2 px-4 bg-dark-red text-floral-white rounded transition duration-150 hover:scale-105">
+        <button type="submit" className="w-full py-2 px-4 bg-dark-red text-floral-white rounded hover:bg-red-950 underline transition duration-150 hover:scale-105">
           Poslat zprávu
         </button>
       </form>

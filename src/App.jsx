@@ -4,9 +4,9 @@ import Home from "./pages/home";
 import Contact from './pages/contact';
 import PortfolioMalba from './pages/portfolioMalba';
 import PortfolioAnimace from './pages/portfolioAnimace';
-import PortfolioZakazky from "./pages/portfolioZakazky";
 import About from './pages/about';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import PortfolioGrafika from './pages/portfolioGrafika';
 
 export default function App () {
   return (
@@ -20,7 +20,7 @@ export default function App () {
             <Route path="/kontakt" Component={Contact} />
             <Route path="/portfolio/malba" Component={PortfolioMalba} />
             <Route path="/portfolio/animace" Component={PortfolioAnimace} />
-            <Route path="/portfolio/zakazky" Component={PortfolioZakazky} />
+            <Route path="/portfolio/grafika" Component={PortfolioGrafika} />
           </Routes>
         </div>
       </div>
