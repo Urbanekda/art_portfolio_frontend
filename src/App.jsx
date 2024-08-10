@@ -7,6 +7,7 @@ import PortfolioAnimace from './pages/portfolioAnimace';
 import About from './pages/about';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import PortfolioGrafika from './pages/portfolioGrafika';
+import ArtPage from "./pages/artPage"
 
 export default function App () {
   return (
@@ -21,6 +22,7 @@ export default function App () {
             <Route path="/portfolio/malba" Component={PortfolioMalba} />
             <Route path="/portfolio/animace" Component={PortfolioAnimace} />
             <Route path="/portfolio/grafika" Component={PortfolioGrafika} />
+            <Route path="/portfolio/:slug" Component={ArtPage}/>
           </Routes>
         </div>
       </div>

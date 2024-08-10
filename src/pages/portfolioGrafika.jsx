@@ -3,14 +3,14 @@ import Item from "../components/item";
 import useFetch from "../hooks/useFetch"
 
 export default function PortfolioGrafika() {
-    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/grafikas?populate=image`)
+    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/graphics?populate=image`)
 
     if (loading) return (<p>Loading...</p>)
     if (error) return (<p>An error has occured</p>)
 
     return(
         <div className="bg-main-bg">
-            <div>
+            <div className="pb-5 mb-3 border-b border-floral-white">
                 <h1 className="text-floral-white text-left pt-8 pl-8 pb-4 font-exo2 text-3xl">
                     Grafická tvorba
                 </h1>

@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Item from "../components/item";
+import useFetch from "../hooks/useFetch"
 
 export default function PortfolioMalba() {
+    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/grafikas?populate=image`)
+
+    if (loading) return (<p>Loading...</p>)
+    if (error) return (<p>An error has occured</p>)
+
     return(
         <div className="bg-main-bg">
             <div>
@@ -16,13 +22,7 @@ export default function PortfolioMalba() {
                     Vestibulum bibendum purus tortor, at placerat ipsum interdum a.</p> 
             </div>
            <div className="grid grid-cols-1 gap-1 ml-9 mb-8 sm:grid-cols-2 md:grid-cols-3">
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+                {data.map(artwork => (<Item artwork={artwork} key={artwork.id} />))}
            </div>
         </div>
     );
