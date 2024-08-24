@@ -14,7 +14,7 @@ export default function App () {
     <Router>
       <div className='App flex'>
         <Sidebar />
-      <div className="content flex-1 ml-36 bg-main-bg">
+      <div className="content md:flex-1 md:ml-36 mt-16 md:mt-0 bg-main-bg">
           <Routes>
             <Route path="/" Component={Home} />
             <Route path="/o_mne" Component={About} />
