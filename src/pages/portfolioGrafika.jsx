@@ -5,7 +5,11 @@ import useFetch from "../hooks/useFetch"
 export default function PortfolioGrafika() {
     const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/graphics?populate=image`)
 
-    if (loading) return (<p>Loading...</p>)
+    if (loading) return (
+        <div className="bg-main-bg font-exo2 text-3xl justify-center h-150">
+            <p className="p-8">Loading...</p>
+        </div>
+    )
     if (error) return (<p>An error has occured</p>)
 
     return(
