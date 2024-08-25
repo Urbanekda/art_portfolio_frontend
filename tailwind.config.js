@@ -19,13 +19,15 @@ export default {
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
-        exo2: ["Exo+2"],
+        exo2: ['"Exo 2"', "sans-serif"],
       },
       boxShadow: {
         "red-shadow": "0 4px 50px 0 rgba(113, 3, 3, 1)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 

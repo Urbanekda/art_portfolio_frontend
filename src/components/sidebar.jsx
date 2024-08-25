@@ -13,7 +13,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="text-lg md:sidebar md:w-36 md:h-full z-20 w-full bg-sidebar-bg border-b bg-cover bg-center text-floral-white fixed bg h-16 border-r border-floral-white">
+    <div className="text-lg md:sidebar md:w-36 md:h-full z-20 w-full bg-sidebar-bg border-b bg-cover bg-center text-floral-white fixed bg h-16 md:border-r border-r-0 border-floral-white">
       <nav className="font-lato h-full">
         <ul className='relative flex md:flex-col w-full md:h-20 h-full flex-row md:space-y-5 md:space-x-0'>
           

@@ -1,4 +1,5 @@
 import React from "react";
+import MarkdownDisplay from "../components/markdownDisplay";
 import { useParams, useLocation } from "react-router-dom";
 
 export default function ArtPage() {
@@ -15,11 +16,13 @@ export default function ArtPage() {
     }
 
     return(
-        <div className="text-floral-white flex flex-col md:flex-row justify-evenly p-8 bg-main-bg">
+        <div className="w-full text-floral-white flex flex-col md:flex-row items-center justify-evenly bg-main-bg">
             <img src={imageSrc} className="max-w-96 h-auto border border-floral-white rounded-md m-8" />
             <div className="p-8">
                 <h1 className="mb-4 font-exo2 text-3xl underline">{artwork.attributes.name}</h1>
-                <p className="font-lato text-md">{artwork.attributes.description}</p>
+                <div className="">
+                    <MarkdownDisplay markdownText={artwork.attributes.description} />
+                </div>
             </div>
         </div>
     );
