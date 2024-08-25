@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <div className="text-lg md:sidebar md:w-36 md:h-full z-20 w-full bg-sidebar-bg border-b bg-cover bg-center text-floral-white fixed bg h-16 border-r border-floral-white">
       <nav className="font-lato h-full">
-        <ul className='flex md:flex-col w-full md:h-20 h-full flex-row md:space-y-5 md:space-x-0'>
+        <ul className='relative flex md:flex-col w-full md:h-20 h-full flex-row md:space-y-5 md:space-x-0'>
           
           <li className='w-full md:mt-4 h-full flex items-center justify-center'>
             <Link to="/" className='h-full flex items-center justify-center w-full'>
@@ -31,10 +31,11 @@ const Sidebar = () => {
 
           <li onClick={handleClick} className="w-full flex items-center justify-center h-full md:py-3 hover:bg-gray-700 md:border-t md:border-l-0 md:border-r-0 md:border-b text-center hover:underline hover:cursor-pointer">
             Portfolio
+            {display && <PortfolioSubmenu />}
           </li>
           
 
-          {display && <li><PortfolioSubmenu /></li>}
+          
           
 
           <li className="w-full h-full mr-4">
