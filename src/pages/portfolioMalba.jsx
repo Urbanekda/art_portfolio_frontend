@@ -3,7 +3,7 @@ import Item from "../components/item";
 import useFetch from "../hooks/useFetch"
 
 export default function PortfolioMalba() {
-    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/grafikas?populate=image`)
+    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/paintings?populate=image`)
 
     if (loading) return (<p>Loading...</p>)
     if (error) return (<p>An error has occured</p>)

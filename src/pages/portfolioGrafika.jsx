@@ -18,12 +18,9 @@ export default function PortfolioGrafika() {
                 <h1 className="text-floral-white text-left pt-8 pl-8 pb-4 font-exo2 text-3xl">
                     Grafická tvorba
                 </h1>
-                <p className="text-floral-white font-lato text-md px-8 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum, libero in aliquet aliquet, augue dui luctus felis, et ullamcorper augue quam sit amet ligula.
-                    Sed aliquam ut turpis nec tristique. Donec non bibendum metus. Pellentesque at consectetur massa, id eleifend enim. 
-                    Proin euismod lorem ut faucibus consectetur. </p>
-                <p className="text-floral-white font-lato text-md px-8 mb-4">Duis egestas dolor nunc, vitae maximus erat posuere non. 
-                    Vestibulum eu leo sodales, gravida risus vitae, vestibulum enim. Suspendisse ac ante orci. 
-                    Vestibulum bibendum purus tortor, at placerat ipsum interdum a.</p> 
+                <p className="text-floral-white font-lato text-md px-8 mb-4">V mé grafické tvorbě dominuje digitální koláž, která mi umožňuje originálním způsobem pracovat se strukturami a vrstvami. Spojuji prvky organického materiálu a strojové mechaniky, abych vytvořil surrealistické světy, kde se prolínají motivy strachu, děsu, transcendence a temnoty. Moje práce se zaměřuje na zosobnění subjektivních pocitů a vnímání, kdy složitá emocionální témata transformuji do vizuálních obrazů, které diváka vtahují do hloubky vlastního prožitku. 
+                     </p>
+                <p className="text-floral-white font-lato text-md px-8 mb-4">Velkou inspirací mi jsou H. R. Giger a Zdzisław Beksiński, jejichž temná, ale fascinující estetika se odráží v mé vlastní tvorbě. Vytvářím kompozice, které mají za cíl nejen upoutat pozornost svou vizuální komplexností, ale i podnítit divákovo zamyšlení nad jeho vlastními emocemi a vnímáním reality. Mé grafiky jsou dostupné k zakoupení ve formě tisku.</p> 
             </div>
            <div className="grid grid-cols-1 gap-1 ml-9 mb-8 sm:grid-cols-2 md:grid-cols-3">
                 {data.map(artwork => (<Item artwork={artwork} key={artwork.id} />))}
