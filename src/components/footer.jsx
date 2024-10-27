@@ -18,8 +18,8 @@ function Footer() {
             </div>
             <div className='flex flex-row items-center'>
                 <MdAlternateEmail />
-                <a href="mailto:vojta.artemis@gmail.com" className="hover:underline text-center ml-1">
-                vojta.artemis@gmail.com
+                <a href="mailto:vojta@vojtechnovak.xyz" className="hover:underline text-center ml-1">
+                vojta@vojtechnovak.xyz
                 </a>  
             </div>
           </div>
