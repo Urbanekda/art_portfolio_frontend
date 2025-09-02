@@ -8,6 +8,7 @@ import About from './pages/about';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import PortfolioGrafika from './pages/portfolioGrafika';
 import ArtPage from "./pages/artPage"
+import AnimationArtPage from './pages/animationArtPage';
 
 export default function App () {
   return (
@@ -23,6 +24,7 @@ export default function App () {
             <Route path="/portfolio/animace" Component={PortfolioAnimace} />
             <Route path="/portfolio/grafika" Component={PortfolioGrafika} />
             <Route path="/portfolio/:slug" Component={ArtPage}/>
+            <Route path="/portfolio/animace/:slug" Component={AnimationArtPage}/>
           </Routes>
         </div>
       </div>

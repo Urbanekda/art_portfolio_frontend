@@ -1,23 +1,30 @@
-import React, { useEffect, useState } from "react";
 import Item from "../components/item";
-import useFetch from "../hooks/useFetch"
+import { usePaint } from "../hooks/usePaint";
 
 export default function PortfolioMalba() {
-    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/paintings?populate=image`)
+    const { data, loading, error } = usePaint();
 
-    if (loading) return (<p>Loading...</p>)
+    if (loading) return (
+        <div className="bg-main-bg font-exo2 text-3xl justify-center h-150">
+            <p className="p-8">Loading...</p>
+        </div>
+    )
     if (error) return (<p>An error has occured</p>)
 
     return(
-        <div className="bg-main-bg h-full w-full">
-            <div>
+        <div className="bg-main-bg">
+            <div className="pb-5 mb-3 border-b border-floral-white">
                 <h1 className="text-floral-white text-left pt-8 pl-8 pb-4 font-exo2 text-3xl">
-                    Malba
+                    Grafická tvorba
                 </h1>
-                <p className="text-floral-white font-lato text-md px-8 mb-4">Brzy k dispozici.</p> 
+                <p className="text-floral-white font-lato text-md px-8 mb-4">V mé grafické tvorbě dominuje digitální koláž, která mi umožňuje originálním způsobem pracovat se strukturami a vrstvami. Spojuji prvky organického materiálu a strojové mechaniky, abych vytvořil surrealistické světy, kde se prolínají motivy strachu, děsu, transcendence a temnoty. Moje práce se zaměřuje na zosobnění subjektivních pocitů a vnímání, kdy složitá emocionální témata transformuji do vizuálních obrazů, které diváka vtahují do hloubky vlastního prožitku. 
+                     </p>
+                <p className="text-floral-white font-lato text-md px-8 mb-4">Velkou inspirací mi jsou H. R. Giger a Zdzisław Beksiński, jejichž temná, ale fascinující estetika se odráží v mé vlastní tvorbě. Vytvářím kompozice, které mají za cíl nejen upoutat pozornost svou vizuální komplexností, ale i podnítit divákovo zamyšlení nad jeho vlastními emocemi a vnímáním reality. Mé grafiky jsou dostupné k zakoupení ve formě tisku.</p> 
             </div>
            <div className="grid grid-cols-1 gap-1 ml-9 mb-8 sm:grid-cols-2 md:grid-cols-3">
-                {data.map(artwork => (<Item artwork={artwork} key={artwork.id} />))}
+                {data && data.map(artwork => (
+                    <Item artwork={artwork} key={artwork.id} />
+                ))}
            </div>
         </div>
     );

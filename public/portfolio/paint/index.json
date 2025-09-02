@@ -1,0 +1,36 @@
+[
+{
+    "id": 1,
+    "name": "Abstract Landscape",
+    "year": 2023,
+    "technique": "Digital Painting",
+    "description": "A vibrant and colorful abstract representation of a landscape, blending various shapes and textures to create a dynamic composition.",
+    "medium": "Digital",
+    "image": "paint/cock_spray.png",
+    "slug": "abstract_landscape"
+},
+{
+    "id": 2,
+    "name": "Abstract Landscape",
+    "year": 2023,
+    "technique": "Digital Painting",
+    "description": "A vibrant and colorful abstract representation of a landscape, blending various shapes and textures to create a dynamic composition.",
+    "medium": "Digital",
+    "image": "paint/cock_spray.png",
+    "slug": "abstract_landscape"
+
+
+},
+{
+    "id": 3,
+    "name": "Abstract Landscape",
+    "year": 2023,
+    "technique": "Digital Painting",
+    "description": "A vibrant and colorful abstract representation of a landscape, blending various shapes and textures to create a dynamic composition.",
+    "medium": "Digital",
+    "image": "paint/cock_spray.png",
+    "slug": "abstract_landscape"
+
+
+}
+]

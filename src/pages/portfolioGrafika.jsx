@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
 import Item from "../components/item";
-import useFetch from "../hooks/useFetch"
+import { useGraphic } from "../hooks/useGraphic";
 
 export default function PortfolioGrafika() {
-    const { loading, error, data } = useFetch(`${import.meta.env.VITE_BASE_URL}/api/graphics?populate=image`)
+    const { data, loading, error } = useGraphic();
 
     if (loading) return (
         <div className="bg-main-bg font-exo2 text-3xl justify-center h-150">
@@ -23,7 +22,9 @@ export default function PortfolioGrafika() {
                 <p className="text-floral-white font-lato text-md px-8 mb-4">Velkou inspirací mi jsou H. R. Giger a Zdzisław Beksiński, jejichž temná, ale fascinující estetika se odráží v mé vlastní tvorbě. Vytvářím kompozice, které mají za cíl nejen upoutat pozornost svou vizuální komplexností, ale i podnítit divákovo zamyšlení nad jeho vlastními emocemi a vnímáním reality. Mé grafiky jsou dostupné k zakoupení ve formě tisku.</p> 
             </div>
            <div className="grid grid-cols-1 gap-1 ml-9 mb-8 sm:grid-cols-2 md:grid-cols-3">
-                {data.map(artwork => (<Item artwork={artwork} key={artwork.id} />))}
+                {data && data.map(artwork => (
+                    <Item artwork={artwork} key={artwork.id} />
+                ))}
            </div>
         </div>
     );
